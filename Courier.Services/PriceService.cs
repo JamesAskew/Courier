@@ -17,7 +17,9 @@ namespace Courier.Services
             var limit = this.GetWeightLimit(parcelSize);
             var excess = weight - limit;
 
-            return excess * WeightLimitFee.RegularFee;
+            var feeAmount = (parcelSize == ParcelSize.Heavy) ? WeightLimitFee.HeavyFee : WeightLimitFee.RegularFee;
+
+            return excess * feeAmount;
         }
 
         private int GetBasePrice(ParcelSize parcelSize)
@@ -36,6 +38,9 @@ namespace Courier.Services
                     break;
                 case ParcelSize.ExtraLarge:
                     price = 2500;
+                    break;
+                case ParcelSize.Heavy:
+                    price = 5000;
                     break;
             }
             return price;
@@ -56,6 +61,9 @@ namespace Courier.Services
                     break;
                 case ParcelSize.ExtraLarge:
                     maxWeight = WeightLimit.ExtraLarge;
+                    break;
+                case ParcelSize.Heavy:
+                    maxWeight = WeightLimit.Heavy;
                     break;
             }
             return maxWeight;

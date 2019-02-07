@@ -70,5 +70,21 @@ namespace Courier.Services.Test
 
             Assert.Equal(10500, price);
         }
+
+        [Fact]
+        public void GetPrice_ForOverHeavyParcel_Returns_5000()
+        {
+            var price = this._priceService.GetPrice(ParcelSize.Heavy, 49);
+
+            Assert.Equal(5000, price);
+        }
+
+        [Fact]
+        public void GetPrice_ForOverWeightHeavyParcel_Returns_10000()
+        {
+            var price = this._priceService.GetPrice(ParcelSize.Heavy, 100);
+
+            Assert.Equal(10000, price);
+        }
     }
 }

@@ -10,6 +10,7 @@ namespace Courier.Domain.Enums
         Small,
         Medium,
         Large,
-        ExtraLarge
+        ExtraLarge,
+        Heavy
     }
 }

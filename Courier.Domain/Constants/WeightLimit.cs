@@ -6,5 +6,6 @@
         public const int Medium = 3;
         public const int Large = 6;
         public const int ExtraLarge = 10;
+        public const int Heavy = 50;
     }
 }
