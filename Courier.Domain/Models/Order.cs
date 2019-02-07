@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Courier.Domain.Models
 {
@@ -9,5 +6,6 @@ namespace Courier.Domain.Models
     {
         public IEnumerable<Price> Prices { get; set; }
         public int TotalCost { get; set; }
+        public int SpeedyShippingCost { get; set; }
     }
 }

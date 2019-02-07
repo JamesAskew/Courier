@@ -36,10 +36,13 @@ namespace Courier.Api
                 });
             }
 
+            var orderTotal = this._orderService.GetTotalPriceForOrder(prices);
+
             var order = new Order
             {
                 Prices = prices,
-                TotalCost = this._orderService.GetTotalPriceForOrder(prices)
+                TotalCost = orderTotal,
+                SpeedyShippingCost = orderTotal * 2
             };
 
             return order;
