@@ -1,5 +1,6 @@
 ﻿using System;
 using Courier.Domain.Enums;
+using Courier.Services.Interfaces;
 
 namespace Courier.Services
 {

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Courier.Domain.Models;
+using Courier.Services.Interfaces;
 
 namespace Courier.Services
 {

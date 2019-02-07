@@ -1,4 +1,6 @@
-﻿using Courier.Domain.Enums;
+﻿
+using Courier.Domain.Enums;
+using Courier.Services.Interfaces;
 using Xunit;
 
 namespace Courier.Services.Test

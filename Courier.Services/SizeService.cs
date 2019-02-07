@@ -1,6 +1,7 @@
 ﻿using Courier.Domain.Constants;
 using Courier.Domain.Enums;
 using Courier.Domain.Models;
+using Courier.Services.Interfaces;
 
 namespace Courier.Services
 {

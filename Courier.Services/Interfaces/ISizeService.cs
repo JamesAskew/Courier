@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using Courier.Domain.Models;
 
-namespace Courier.Services
+namespace Courier.Services.Interfaces
 {
     public interface ISizeService
     {

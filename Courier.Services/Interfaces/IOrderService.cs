@@ -1,7 +1,7 @@
 ﻿using Courier.Domain.Models;
 using System.Collections.Generic;
 
-namespace Courier.Services
+namespace Courier.Services.Interfaces
 {
     public interface IOrderService
     {
