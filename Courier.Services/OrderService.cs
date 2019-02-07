@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.Linq;
 using Courier.Domain.Models;
 
 namespace Courier.Services
@@ -9,7 +8,12 @@ namespace Courier.Services
     {
         public int GetTotalPriceForOrder(IEnumerable<Price> prices)
         {
-            return 0;
+            var totalPrice = 0;
+            if (prices.Any())
+            {
+                totalPrice = prices.Sum(x => x.Amount);
+            }
+            return totalPrice;
         }
     }
 }
