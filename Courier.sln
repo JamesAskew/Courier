@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Courier.Api", "Courier.Api\Courier.Api.csproj", "{C742B299-118B-4F33-B997-6BE890F52513}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C742B299-118B-4F33-B997-6BE890F52513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C742B299-118B-4F33-B997-6BE890F52513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C742B299-118B-4F33-B997-6BE890F52513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C742B299-118B-4F33-B997-6BE890F52513}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E4B426B-66DF-4F01-B488-12147FAC6419}
+	EndGlobalSection
+EndGlobal
