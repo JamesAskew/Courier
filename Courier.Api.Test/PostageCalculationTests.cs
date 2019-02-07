@@ -95,5 +95,22 @@ namespace Courier.Api.Test
             Assert.Equal(1100, order.TotalCost);
         }
 
+        [Fact]
+        public void CalculateOrder_ForOneSmallPackage_Returns_SpeedyShipping_600()
+        {
+            var parcels = new List<Parcel>
+            {
+                new Parcel
+                {
+                    Length = 9,
+                    Width = 9,
+                    Depth = 9
+                }
+            };
+
+            var order = this._postageCalculation.CalculateOrder(parcels);
+
+            Assert.Equal(600, order.SpeedyShippingCost);
+        }
     }
 }
