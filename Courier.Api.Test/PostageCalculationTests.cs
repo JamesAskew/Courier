@@ -112,5 +112,24 @@ namespace Courier.Api.Test
 
             Assert.Equal(600, order.SpeedyShippingCost);
         }
+
+        [Fact]
+        public void CalculateOrder_ForOneOverWeightSmallParcel_Returns_TotalPrice_10100()
+        {
+            var parcels = new List<Parcel>
+            {
+                new Parcel
+                {
+                    Length = 9,
+                    Width = 9,
+                    Depth = 9,
+                    Weight = 50
+                }
+            };
+
+            var order = this._postageCalculation.CalculateOrder(parcels);
+
+            Assert.Equal(10100, order.TotalCost);
+        }
     }
 }

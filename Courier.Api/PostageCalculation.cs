@@ -27,7 +27,7 @@ namespace Courier.Api
             foreach (var parcel in parcels)
             {
                 var size = this._sizeService.GetParcelSize(parcel);
-                var price = this._priceService.GetPrice(size);
+                var price = this._priceService.GetPrice(size, parcel.Weight);
 
                 prices.Add(new Price
                 {
