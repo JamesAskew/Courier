@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Courier.Api\Courier.Api.csproj" />
     <ProjectReference Include="..\Courier.Domain\Courier.Domain.csproj" />
     <ProjectReference Include="..\Courier.Services\Courier.Services.csproj" />
   </ItemGroup>
